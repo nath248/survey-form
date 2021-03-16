@@ -1,0 +1,70 @@
+<html lang="en">
+  <meta charset="utf-8">
+  <head>
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Nathaly's Survey Form</h1>
+      <p id="description">We greatly appreciate your feedback!</p>
+      <link rel="stylesheet" href="css/main.css">
+    </header>
+
+    <form id="survey-form">
+        <label for="text" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <label for="text" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <label for="text" id="number-label">Age (optional)</label>
+        <input id="number" type="number" placeholder="Enter your age" min="21" max="100">
+
+      <h2>Do you feel the work I've provided was true to what you requested?</h2>
+        <label for="dropdown">
+          <select name="dropdown" id="dropdown">
+            <option value="Yes">Yes</option>
+            <option value="Somewhat">Somewhat</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+
+      <h2>Would you recommend me to a friend?</h2>
+        <label for="radio"></label>
+        <input id="very likely" type="radio" name="recommendations" value="very likely"> Very Likely
+        <br>
+        <label for="radio"></label>
+        <input id="maybe" type="radio" name="recommendations" value="maybe"> Maybe
+        <br>
+        <label for="radio"></label>
+        <input id="very unlikely" type="radio" name="recommendations" value="very unlikely"> Very Unlikely
+
+      <h2>What is your favorite part about my portfolio site?</h2>
+      <label for="dropdown">
+        <select name="dropdown" id="dropdown">
+          <option value="The Images">The Images</option>
+          <option value="The Colors">The Colors</option>
+          <option value="The Layout">The Layout</option>
+        </select>
+      </label>
+
+      <h2>What would you like to see improved?</h2>
+        <label for="checkbox"></label>
+        <input id="html" type="checkbox" value="html">HTML Projects<br>
+        <label for="checkbox"></label>
+        <input id="css" type="checkbox" value="css">CSS Projects <br>
+        <label for="checkbox"></label>
+        <input id="javascript" type="checkbox" value="javascript">Javascript Projects <br>
+        <label for="checkbox"></label>
+        <input id="responsive" type="checkbox" value="responsive">Responsive Projects
+
+    <h2>Any comments or suggestions?</h2>
+      <textarea name="additional-comments" id="additional-comments" cols="100" rows="10">Enter your comments here...</textarea>
+      <br><button id="submit" type="submit">Submit</button>
+
+
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
