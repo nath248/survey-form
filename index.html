@@ -9,19 +9,23 @@
       <h1 id="title">Nathaly's Survey Form</h1>
       <p id="description">We greatly appreciate your feedback!</p>
       <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Syne+Mono&display=swap" rel="stylesheet">
     </header>
 
     <form id="survey-form">
-        <label for="text" id="name-label">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-        <label for="text" id="email-label">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-        <label for="text" id="number-label">Age (optional)</label>
-        <input id="number" type="number" placeholder="Enter your age" min="21" max="100">
+        <label for="text" id="name-label">Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" required><br>
+        <label for="text" id="email-label">Email</label><br>
+        <input id="email" type="email" placeholder="Enter your email" required><br>
+        <label for="text" id="number-label">Age (optional)</label><br>
+        <input id="number" type="number" placeholder="Enter your age" min="21" max="100"><br>
 
       <h2>Do you feel the work I've provided was true to what you requested?</h2>
         <label for="dropdown">
           <select name="dropdown" id="dropdown">
+            <option value="">Please Select</option>
             <option value="Yes">Yes</option>
             <option value="Somewhat">Somewhat</option>
             <option value="No">No</option>
@@ -29,18 +33,22 @@
         </label>
 
       <h2>Would you recommend me to a friend?</h2>
-        <label for="radio"></label>
-        <input id="very likely" type="radio" name="recommendations" value="very likely"> Very Likely
+        <label for="radio">
+        <input id="very likely" type="radio" name="recommendations" value="very likely" checked="checked"> Very Likely
+        </label>
         <br>
-        <label for="radio"></label>
+        <label for="radio">
         <input id="maybe" type="radio" name="recommendations" value="maybe"> Maybe
+        </label>
         <br>
-        <label for="radio"></label>
+        <label for="radio">
         <input id="very unlikely" type="radio" name="recommendations" value="very unlikely"> Very Unlikely
+        </label>
 
       <h2>What is your favorite part about my portfolio site?</h2>
       <label for="dropdown">
         <select name="dropdown" id="dropdown">
+          <option value="">Please Select</option>
           <option value="The Images">The Images</option>
           <option value="The Colors">The Colors</option>
           <option value="The Layout">The Layout</option>
@@ -48,19 +56,23 @@
       </label>
 
       <h2>What would you like to see improved?</h2>
-        <label for="checkbox"></label>
+        <label for="checkbox">
         <input id="html" type="checkbox" value="html">HTML Projects<br>
-        <label for="checkbox"></label>
+        </label>
+        <label for="checkbox">
         <input id="css" type="checkbox" value="css">CSS Projects <br>
-        <label for="checkbox"></label>
+        </label>
+        <label for="checkbox">
         <input id="javascript" type="checkbox" value="javascript">Javascript Projects <br>
-        <label for="checkbox"></label>
+        </label>
+        <label for="checkbox">
         <input id="responsive" type="checkbox" value="responsive">Responsive Projects
-
+        </label>
     <h2>Any comments or suggestions?</h2>
       <textarea name="additional-comments" id="additional-comments" cols="100" rows="10">Enter your comments here...</textarea>
-      <br><button id="submit" type="submit">Submit</button>
-
+    <div class="button">
+      <button id="submit" type="submit">Submit</button>
+    </div>
 
   </form>
 
